@@ -1,13 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './styles.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter,Routes,Route,Link,Outlet} from 'react-router-dom';
+import Home from './Home';
+import Founder from './Founder';
+import Packages from './Packages';
+import Contact from './Contact';
+import { AiFillCar} from "react-icons/ai";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <BrowserRouter>
     <App />
+    </BrowserRouter>
+
   </React.StrictMode>
 );
 
